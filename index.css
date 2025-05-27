@@ -1,27 +1,97 @@
-
+/* עיצוב כללי של הדף */
+body {
+    margin: 0;
+    font-family: "PT Sans", sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* סרגל ניווט מקצועי */
   .navbar {
-    background-color: #222;
+    background-color: #990099;
     color: white;
-    padding: 10px 20px;
+    padding: 15px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    direction: rtl; /* בגלל שהאתר בעברית */
+    direction: rtl;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
   }
-
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
+  
+  /* לוגו */
+  .logo a {
+    font-family: "PT Sans", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #33d6ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
   }
-
+  
+  .logo a:hover {
+    color: #ffffff;
+  }
+  
+  /* קישורים בסרגל */
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+  
   .nav-links a {
     color: white;
     text-decoration: none;
-    margin: 0 10px;
-    font-weight: bold;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s;
   }
-
+  
+  .nav-links a::after {
+    content: '';
+    height: 2px;
+    width: 0;
+    background-color: #33d6ff;
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    transition: width 0.3s ease;
+  }
+  
   .nav-links a:hover {
-    text-decoration: underline;
+    color: #33d6ff;
   }
+  
+  .nav-links a:hover::after {
+    width: 100%;
+  }
+  
+  /* כותרת עמוד הבית */
+  #title-homepage {
+    text-align: center;
+    font-size: 52px;
+    margin-top: 60px;
+    color: #990099;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  
+  /* תמונה של הלוגו בעמוד הבית */
+  #img-homepage {
+    display: block;
+    margin: 40px auto;
+    max-width: 300px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  #img-homepage:hover {
+    transform: scale(1.03);
+  }
+  
 
