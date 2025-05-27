@@ -8,7 +8,7 @@ body {
   
   /* סרגל ניווט מקצועי */
   .navbar {
-    background-color: #990099;
+    background-color: #70008F;
     color: white;
     padding: 15px 40px;
     display: flex;
@@ -26,7 +26,7 @@ body {
     font-family: "PT Sans", sans-serif;
     font-size: 30px;
     font-weight: 700;
-    color: #33d6ff;
+    color: #9cbdff;
     text-decoration: none;
     transition: color 0.3s ease;
   }
@@ -54,7 +54,8 @@ body {
     content: '';
     height: 2px;
     width: 0;
-    background-color: #33d6ff;
+    background-color: #    color: #9cbdff;
+    ;
     position: absolute;
     right: 0;
     bottom: -5px;
@@ -62,6 +63,7 @@ body {
   }
   
   .nav-links a:hover {
+    color: #9cbdff;
     color: #33d6ff;
   }
   
@@ -74,7 +76,7 @@ body {
     text-align: center;
     font-size: 52px;
     margin-top: 60px;
-    color: #990099;
+    color: #70008F;
     text-transform: uppercase;
     letter-spacing: 3px;
   }
